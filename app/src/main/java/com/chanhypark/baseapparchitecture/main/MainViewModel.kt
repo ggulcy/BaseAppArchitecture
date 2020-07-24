@@ -1,6 +1,8 @@
 package com.chanhypark.baseapparchitecture.main
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.chanhypark.baseapparchitecture.data.model.User
 import com.chanhypark.baseapparchitecture.data.repository.MainRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -12,13 +14,22 @@ class MainViewModel @Inject constructor(
     private val mainRepository: MainRepository
 ) : ViewModel() {
 
+    var userList = MutableLiveData<List<User>>()
+    var pictureList = MutableLiveData<List<User.Picture>>()
 
     fun getUser() {
         CoroutineScope(Dispatchers.Main).launch {
             withContext(Dispatchers.Main){
                 try {
                     mainRepository.fetchData()?.let {
-                        println("${it[0].email} <----")
+                        userList.value = it
+
+                        var pList = ArrayList<User.Picture>()
+                        it.forEach {user->
+                            pList.add(user.picture)
+                        }
+                        pictureList.value = pList
+
                     }
                 }catch (e:Exception){
                     println(e.message)
