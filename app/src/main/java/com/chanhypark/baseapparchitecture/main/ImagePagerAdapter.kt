@@ -12,7 +12,9 @@ import com.chanhypark.baseapparchitecture.data.model.User
 
 
 class ImagePagerAdapter constructor(
-    private val imgList : List<User.Picture>, private val mainViewModel: MainViewModel
+    private val imgList : List<User.Picture>,
+    private val mainViewModel: MainViewModel,
+    private val imageClick : ((position:Int) -> Unit)?
 ): PagerAdapter(){
 
     override fun instantiateItem(container: View, position: Int): Any {
@@ -25,6 +27,7 @@ class ImagePagerAdapter constructor(
                 .load(large)
                 .into(ivPicture)
         }
+        ivPicture.setOnClickListener { imageClick?.invoke(position) }
 
         (container as ViewPager).addView(imageLayout)
 
@@ -41,4 +44,5 @@ class ImagePagerAdapter constructor(
     override fun destroyItem(container: View, position: Int, `object`: Any) {
         (container as ViewPager).removeView(`object` as View)
     }
+
 }
