@@ -84,7 +84,6 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0-beta01"
 
     implementation "com.sothree.slidinguppanel:library:3.4.0"
-
     implementation 'com.github.andrefrsousa:SuperBottomSheet:1.5.0'
 
 }

@@ -23,7 +23,7 @@ class MainActivity : BaseActivity() {
 
         bottom_btn.setOnClickListener {
 //        CustomBottomSheet.newInstance().show(supportFragmentManager,CustomBottomSheet.TAG_DIALOG)
-            val customBottomSheet = SuperBottomSheet()
+            val customBottomSheet = CustomBottomSheet()
             customBottomSheet.show(supportFragmentManager,SuperBottomSheet.TAG_DIALOG)
 
         }
