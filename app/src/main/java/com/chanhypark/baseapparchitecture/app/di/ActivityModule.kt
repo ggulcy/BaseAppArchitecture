@@ -1,6 +1,6 @@
 package com.chanhypark.baseapparchitecture.app.di
 
-import com.chanhypark.baseapparchitecture.main.MainActivity
+import com.chanhypark.baseapparchitecture.main.ui.MainActivity
 import com.chanhypark.baseapparchitecture.main.di.MainModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

@@ -1,4 +1,4 @@
-package com.chanhypark.baseapparchitecture.main
+package com.chanhypark.baseapparchitecture.main.ui.view_model
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

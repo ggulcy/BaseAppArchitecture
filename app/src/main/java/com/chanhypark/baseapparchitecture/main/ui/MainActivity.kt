@@ -1,12 +1,12 @@
-package com.chanhypark.baseapparchitecture.main
+package com.chanhypark.baseapparchitecture.main.ui
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.chanhypark.baseapparchitecture.R
 import com.chanhypark.baseapparchitecture.app.BaseActivity
-import com.chanhypark.baseapparchitecture.data.model.User
-import kotlinx.android.synthetic.main.activity_main.*
+import com.chanhypark.baseapparchitecture.main.replaceFragmentInActivity
+import com.chanhypark.baseapparchitecture.main.ui.view_model.MainViewModel
 
 class MainActivity : BaseActivity() {
 
@@ -17,15 +17,16 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         mainViewModel.getUser()
-        observeData()
+
+        replaceFragmentInActivity(MainFragment.newInstance(),R.id.layout_fr)
+//        observeData()
     }
 
 
     fun observeData(){
         mainViewModel.pictureList.observe(this, Observer {
-           view_pager.adapter = ImagePagerAdapter(it,mainViewModel)
+//           view_pager.adapter = ImagePagerAdapter(it,mainViewModel)
         })
-
     }
 
 }

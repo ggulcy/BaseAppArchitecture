@@ -2,7 +2,7 @@ package com.chanhypark.baseapparchitecture.main.di
 
 import androidx.lifecycle.ViewModel
 import com.chanhypark.baseapparchitecture.app.di.ViewModelKey
-import com.chanhypark.baseapparchitecture.main.MainViewModel
+import com.chanhypark.baseapparchitecture.main.ui.view_model.MainViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
