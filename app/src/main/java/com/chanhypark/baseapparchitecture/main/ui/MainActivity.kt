@@ -23,10 +23,6 @@ class MainActivity : BaseActivity() {
     }
 
 
-    fun observeData(){
-        mainViewModel.pictureList.observe(this, Observer {
-//           view_pager.adapter = ImagePagerAdapter(it,mainViewModel)
-        })
-    }
+
 
 }

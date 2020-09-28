@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.chanhypark.baseapparchitecture.R
 import com.chanhypark.baseapparchitecture.main.ui.view_model.MainViewModel
-import kotlinx.android.synthetic.main.fragmnet_detail.*
+import kotlinx.android.synthetic.main.fragmnet_main.*
 
 
 class MainFragment : Fragment() {
@@ -20,7 +20,7 @@ class MainFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragmnet_detail, container, false)
+    ): View? = inflater.inflate(R.layout.fragmnet_main, container, false)
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -32,8 +32,12 @@ class MainFragment : Fragment() {
 
 
     fun observeData() {
-        mainViewModel.pictureList.observe(viewLifecycleOwner, Observer {
-            view_pager.adapter = ImagePagerAdapter(it, mainViewModel)
+        mainViewModel.userList.observe(viewLifecycleOwner, Observer {
+            context?.let {context->
+                rv_user.adapter = UserAdapter(context).apply{
+                    collections = it
+                }
+            }
         })
     }
 
