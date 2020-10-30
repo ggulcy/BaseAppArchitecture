@@ -7,4 +7,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <style name="TextAppearanceStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">11dp</item>
+        <item name="color">@color/rv_vip_Gray_600</item>
+    </style>
+    <style name="TextAppearanceEditTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textCursorDrawable">@drawable/rv_vip_cursor_drawable</item>
+    </style>
 </resources>

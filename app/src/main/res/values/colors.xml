@@ -3,4 +3,50 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+
+
+    <color name="rv_vip_pager_indicator_back">#4c000000</color>
+    <color name="rv_vip_pager_indicator_border">#0c000000</color>
+
+    <color name="rv_vip_text_grey">#e0e0e0</color>
+
+    <color name="rv_vip_Green_500">#00C400</color>
+    <color name="rv_vip_Blue_500">#067DFD</color>
+    <color name="rv_vip_Blue_800">#0231a6</color>
+    <color name="rv_vip_CTA">#0028AC</color>
+    <color name="rv_vip_BIG_SMILE_DAY">#7B00E7</color>
+    <color name="rv_vip_Teal_700">#1d7f97</color>
+    <color name="rv_vip_Gray_25">#dfdfdf</color>
+    <color name="rv_vip_Gray_50">#FAFAFA</color>
+    <color name="rv_vip_Gray_100">#F5F5F5</color>
+    <color name="rv_vip_Gray_200">#EEEEEE</color>
+    <color name="rv_vip_Gray_300">#E0E0E0</color>
+    <color name="rv_vip_Gray_400">#BDBDBD</color>
+    <color name="rv_vip_Gray_500">#9e9e9e</color>
+    <color name="rv_vip_Gray_600">#757575</color>
+    <color name="rv_vip_Gray_700">#616161</color>
+    <color name="rv_vip_Gray_900">#222222</color>
+    <color name="rv_vip_white">#FFFFFF</color>
+    <color name="rv_vip_Black">#000000</color>
+    <color name="rv_vip_Smile">#000000</color>
+    <color name="rv_vip_Smileclub_light">#bc9a6e</color>
+    <color name="rv_vip_SmileClub_dark">#a78353</color>
+    <color name="rv_vip_Smilepay_600">#313191</color>
+    <color name="rv_vip_Smile_delivery">#282864</color>
+    <color name="rv_vip_grad_start">#00ffffff</color>
+    <color name="rv_vip_grad_center">#72ffffff</color>
+    <color name="rv_vip_grad_end">#c1ffffff</color>
+    <color name="rv_vip_black_alpha">#0a000000</color>
+    <color name="rv_vip_Black_alpha_40">#66000000</color>
+    <color name="rv_vip_Orange_400">#ff7638</color>
+    <color name="rv_vip_Black_alpha_20">#33000000</color>
+    <color name="rv_vip_Black_alpha_04">#0A000000</color>
+    <color name="rv_vip_smile_btn">#ffd200</color>
+    <color name="rv_vip_2c2c2c">#2c2c2c</color>
+    <color name="rv_vip_CTA_opacity0.4">#660028AC</color>
+
+    <color name="rv_vip_Green_500_opacity0.4">#6600C400</color>
+    <color name="rv_vip_gradient">#88BDBDBD</color>
+
 </resources>
