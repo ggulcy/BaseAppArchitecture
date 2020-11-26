@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
@@ -28,15 +29,22 @@ class MainFragment : Fragment() {
 
         observeData()
 
+        testAnim()
+
+
+    }
+    fun testAnim(){
+//        val wiggle = AnimationUtils.loadAnimation(context,R.anim.wiggle)
+//        iv_lottie.startAnimation(wiggle)
     }
 
 
     fun observeData() {
         mainViewModel.userList.observe(viewLifecycleOwner, Observer {
             context?.let {context->
-                rv_user.adapter = UserAdapter(context).apply{
-                    collections = it
-                }
+//                rv_user.adapter = UserAdapter(context).apply{
+//                    collections = it
+//                }
             }
         })
     }

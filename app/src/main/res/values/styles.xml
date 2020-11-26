@@ -7,4 +7,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="TestTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item
+            name="android:windowBackground">@color/colorAccent</item>
+        <!-- turn off any drawable used to draw a frame on the window -->
+
+    </style>
 </resources>
