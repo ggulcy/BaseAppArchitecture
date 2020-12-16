@@ -16,7 +16,7 @@ class MainViewModel @Inject constructor(
 
     var userList = MutableLiveData<List<User>>()
     var pictureList = MutableLiveData<List<User.Picture>>()
-
+    val isService = MutableLiveData<Boolean>(false)
     fun getUser() {
         CoroutineScope(Dispatchers.Main).launch {
             withContext(Dispatchers.Main){

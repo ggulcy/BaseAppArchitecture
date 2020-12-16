@@ -1,6 +1,7 @@
 package com.chanhypark.baseapparchitecture.app.di
 
 import com.chanhypark.baseapparchitecture.app.BaseApplication
+import com.chanhypark.baseapparchitecture.data.MyService
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
@@ -18,4 +19,5 @@ import javax.inject.Singleton
 interface AppComponent : AndroidInjector<BaseApplication> {
     @Component.Factory
     abstract class Factory:AndroidInjector.Factory<BaseApplication>
+
 }
