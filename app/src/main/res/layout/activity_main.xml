@@ -9,14 +9,41 @@
     tools:context=".main.MainActivity">
 
 
-    <!--    <com.chanhypark.baseapparchitecture.main.custom_view.CustomView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        app:customtype="typetype"/>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginBottom="100dp">
 
-    <!--    <com.chanhypark.baseapparchitecture.main.custom_view.CustomView2-->
-    <!--        android:id="@+id/customview"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"/>-->
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:adjustViewBounds="true"
+            android:background="@color/colorAccent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp">
+
+
+    <ImageView
+        android:id="@+id/iv_picture1"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:adjustViewBounds="true"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
