@@ -9,6 +9,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.chanhypark.baseapparchitecture.R
+import com.chanhypark.baseapparchitecture.main.setStatusBarColorCustom
 import com.chanhypark.baseapparchitecture.main.ui.view_model.MainViewModel
 import kotlinx.android.synthetic.main.fragmnet_main.*
 
@@ -25,6 +26,9 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        activity?.window?.setStatusBarColorCustom(R.color.colorYellow,true)
+
 
         observeData()
 
